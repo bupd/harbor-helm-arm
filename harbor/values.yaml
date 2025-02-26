@@ -20,7 +20,7 @@ expose:
     auto:
       # The common name used to generate the certificate, it's necessary
       # when the type isn't "ingress"
-      commonName: "htest.kube.bupd.xyz"
+      commonName: "yourdomain.xyz"
     secret:
       # The name of secret which contains keys named:
       # "tls.crt" - the certificate
@@ -112,7 +112,7 @@ expose:
 # the IP address of k8s node
 #
 # If Harbor is deployed behind the proxy, set it as the URL of proxy
-externalURL: https://htest.kube.bupd.xyz
+externalURL: https://yourdomain.xyz
 
 # The persistence is enabled by default and a default StorageClass
 # is needed in the k8s cluster to provision volumes dynamically.
