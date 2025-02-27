@@ -556,8 +556,8 @@ portal:
 
 core:
   image:
-    repository: goharbor/harbor-core
-    tag: v2.12.0
+    repository: ttl.sh/harborbupd/core
+    tag: v3.0
   # set the service account to be used, default if left empty
   serviceAccountName: ""
   # mount the service account token
@@ -643,8 +643,8 @@ core:
 
 jobservice:
   image:
-    repository: goharbor/harbor-jobservice
-    tag: v2.12.0
+    repository: ttl.sh/harborbupd/jobservice
+    tag: v3.0
   # set the service account to be used, default if left empty
   serviceAccountName: ""
   # mount the service account token
@@ -715,8 +715,8 @@ registry:
     extraEnvVars: []
   controller:
     image:
-      repository: goharbor/harbor-registryctl
-      tag: v2.12.0
+      repository: ttl.sh/harborbupd/registryctl
+      tag: v3.0
     # resources:
     #  requests:
     #    memory: 256Mi
